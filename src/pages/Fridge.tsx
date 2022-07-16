@@ -5,11 +5,15 @@ import Header from "../components/Header";
 import { useStateContext } from "../contexts/contextProvider";
 
 const Fridge = () => {
-  const { isSidebarOpen, setSidebarOpen } = useStateContext();
+  const { isSidebarOpen } = useStateContext();
   return (
-    <div className={`mx-24 mt-20 p-2 md:p-10 bg-white rounded-3xl ${isSidebarOpen ? "md:m-10":"md:m-28"}`}>
+    <div
+      className={`ml-28 mr-8 mt-10 p-10 pb-20 md:p-10 bg-white rounded-3xl ${
+        isSidebarOpen ? "md:m-10" : "md:m-28"
+      }`}
+    >
       {/* <Paper variant="outlined"/> */}
-      <Header title="Fridge" />
+      <Header title="What's in my Fridge?" />
       <FridgeTable />
     </div>
   );

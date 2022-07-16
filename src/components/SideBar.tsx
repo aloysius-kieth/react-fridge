@@ -34,7 +34,7 @@ const SideBar = () => {
     <div
       className={`${
         isSidebarOpen ? "w-72" : "w-20"
-      }  h-screen p-5 pt-8 bg-side-bar-bg duration-300 fixed`}
+      }  h-screen p-5 pt-8 bg-side-bar-bg duration-300 fixed z-50`}
     >
       <ArrowBackIosNewRoundedIcon
         className={`absolute cursor-pointer -right-3 top-9 w-7 border-black
